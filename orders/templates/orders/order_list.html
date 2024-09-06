@@ -1,0 +1,13 @@
+<h1>Список заказов</h1>
+<table>
+    <tr>
+        <th>Имя</th>
+        <th>Время приготовления</th>
+    </tr>
+    {% for order, cooking_time in orders_info %}
+    <tr>
+        <td>{{ order.person_name }}</td>
+        <td>{{ cooking_time }}</td>
+    </tr>
+    {% endfor %}
+</table>
